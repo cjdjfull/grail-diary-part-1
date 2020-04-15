@@ -35,13 +35,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zNe-MA-tqo">
                                                     <rect key="frame" x="20" y="4.5" width="82.5" height="51.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aB-pG-X9w">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1aB-pG-X9w">
                                                             <rect key="frame" x="0.0" y="0.0" width="82.5" height="26.5"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="div-L7-nB8">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="div-L7-nB8">
                                                             <rect key="frame" x="0.0" y="27.5" width="82.5" height="24"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                                             <nil key="textColor"/>
@@ -205,9 +205,8 @@
                                     <navigationItem id="ZnS-QV-5Fo"/>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lDN-SW-36t">
-                                <rect key="frame" x="33" y="403" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lDN-SW-36t">
+                                <rect key="frame" x="20" y="410" width="240" height="115"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -222,8 +221,14 @@
                             <constraint firstItem="TEQ-ep-dfA" firstAttribute="trailing" secondItem="FjC-to-Ien" secondAttribute="trailing" constant="20" id="8ZG-Vm-uWu"/>
                             <constraint firstItem="UdW-Ob-t8K" firstAttribute="top" secondItem="FjC-to-Ien" secondAttribute="top" id="A29-sS-4DC"/>
                             <constraint firstItem="xNi-rS-Kn9" firstAttribute="leading" secondItem="UdW-Ob-t8K" secondAttribute="leading" id="ATF-TX-Dsk"/>
+                            <constraint firstItem="md8-i6-ydb" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UdW-Ob-t8K" secondAttribute="trailing" constant="8" symbolic="YES" id="D3k-cd-8Nz"/>
+                            <constraint firstItem="TEQ-ep-dfA" firstAttribute="bottom" secondItem="lDN-SW-36t" secondAttribute="bottom" constant="288" id="DTQ-Wy-CZK"/>
                             <constraint firstItem="FjC-to-Ien" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="UdW-Ob-t8K" secondAttribute="trailing" constant="8" id="IWc-ni-Kxh"/>
                             <constraint firstItem="FjC-to-Ien" firstAttribute="top" secondItem="TEQ-ep-dfA" secondAttribute="top" constant="19" id="Osk-BT-Kj7"/>
+                            <constraint firstItem="lDN-SW-36t" firstAttribute="top" secondItem="xNi-rS-Kn9" secondAttribute="bottom" constant="40" id="T11-hM-MEZ"/>
+                            <constraint firstItem="TEQ-ep-dfA" firstAttribute="trailing" secondItem="lDN-SW-36t" secondAttribute="trailing" constant="154" id="VIq-KC-Do1"/>
+                            <constraint firstItem="lDN-SW-36t" firstAttribute="leading" secondItem="UdW-Ob-t8K" secondAttribute="leading" id="dfA-ie-F5M"/>
+                            <constraint firstItem="TEQ-ep-dfA" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="xNi-rS-Kn9" secondAttribute="trailing" symbolic="YES" id="gvR-aM-aaL"/>
                             <constraint firstItem="md8-i6-ydb" firstAttribute="trailing" secondItem="FjC-to-Ien" secondAttribute="trailing" id="nXS-gZ-Rfh"/>
                             <constraint firstItem="md8-i6-ydb" firstAttribute="top" secondItem="FjC-to-Ien" secondAttribute="bottom" constant="8" id="rvO-Xp-5Th"/>
                         </constraints>
